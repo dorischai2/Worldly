@@ -1,0 +1,30 @@
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Information</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/papercss@1.9.2/dist/paper.min.css"
+    />
+    <!-- page outlet needed adjustment -->
+    <link
+        rel="stylesheet"
+        href="style/style.css"
+    />
+</head>
+
+<body>
+    <div id="country-info">
+        <h2>Worldly - quick facts about countries! &#127758;</h2>
+        
+        <label for="country"><h4>Enter country name:</h4></label>
+        <input type="text" id="country" name="country">
+        <button onclick="fetchCountryInfo()">Get Info</button>
+        <div id="country-data"></div>
+    </div>
+
+    <script src="src/fetchCountries.js"></script>
+</body>
+</html>
